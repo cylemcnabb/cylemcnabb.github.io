@@ -10,6 +10,36 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+				<style>
+			.tooltip {
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+			}
+
+			.tooltip .tooltiptext {
+				visibility: hidden;
+				width: 120px;
+				background-color: lightblue;
+				color: white;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px;
+				position: absolute;
+				z-index: 1;
+				bottom: 125%;
+				left: 50%;
+				margin-left: -60px;
+				opacity: 0;
+				transition: opacity 0.2s;
+				border: 2px solid white;
+			}
+
+			.tooltip:hover .tooltiptext {
+				visibility: visible;
+				opacity: 1;
+			}
+		</style>
 		<noscript>
 			<link rel="stylesheet" href="assets/css/noscript.css" />
 		</noscript>
